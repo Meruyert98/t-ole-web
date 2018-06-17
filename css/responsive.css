@@ -1,0 +1,253 @@
+/*-- Space-Class --*/
+
+[class|=space] {
+    display: block;
+    width: 100%;
+    overflow: hidden
+}
+
+.space-10 {
+    height: 10px;
+}
+
+.space-20 {
+    height: 20px;
+}
+
+.space-30 {
+    height: 30px;
+}
+
+.space-40 {
+    height: 40px;
+}
+
+.space-50 {
+    height: 50px;
+}
+
+.space-60 {
+    height: 60px;
+}
+
+.space-70 {
+    height: 70px;
+}
+
+.space-80 {
+    height: 80px;
+}
+
+.space-90 {
+    height: 90px;
+}
+
+.space-100 {
+    height: 100px;
+}
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+    .mainmenu-area ul.nav.navbar-nav li a {
+        margin: 0 10px;
+    }
+    .feature-area,
+    .progress-area {
+        background-image: none;
+        margin-bottom: 0;
+    }
+    .footer-bottom .footer-menu ul,
+    .footer-area {
+        text-align: center;
+    }
+    .angle:after {
+        height: 80px;
+    }
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .home-area {
+        padding: 50px 0;
+        padding-bottom: 0px;
+        margin-bottom: 0;
+    }
+    .home-area h1{
+        font-size: 35px;
+    }
+    .home-area p{
+        font-size:20px;
+    }
+    .mainmenu-area ul.nav.navbar-nav li a,
+    .mainmenu-area ul.nav.navbar-nav li a:hover,
+    .mainmenu-area ul.nav.navbar-nav li.active a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+    .progress-area {
+        background-image: none;
+    }
+    .mobile-image {
+        display: none !important;
+    }
+    .mainmenu-area .right-button a {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    .feature-area,
+    .progress-area {
+        background-image: none;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .progress-area #first{
+        height:400px;
+        width: 300px;
+        top: 50px;
+        left: 5px;
+    }
+    .progress-area #second{
+        top: 5px;
+        left: 170px;
+        height:400px;
+        width: 230px;
+    }
+    .space-100{
+        height: 50px;
+    }
+    .space-50{
+        height:20px;
+    }
+    .video-photo {
+        margin-bottom: 60px;
+    }
+    .footer-bottom .footer-menu ul,
+    .footer-area {
+        text-align: center;
+    }
+    .footer-area .addres{
+        padding-left:80px;
+    }
+    .form-style-8 input[type="text"],
+    .form-style-8 input[type="email"],
+    .form-style-8 textarea{
+        margin-left:70px;
+    }
+    .footer-bottom .logo{
+        margin-top:5px;
+        margin-bottom:25px;
+    }
+    .angle:after {
+        height: 80px;
+    }
+    .section-padding-top{
+        padding-top: 20px;
+    }
+    .section-padding-top .some #one{
+        padding-right: 30px;
+    }
+    img{
+        height:250px;
+    }
+    .carousel-indicators{
+        padding-left: 0px;
+    }
+    #myCarousel {
+        padding-left:0px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .bttn-white {
+        padding: 8px 30px;
+    }
+    .section-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .angle:after {
+        height: 60px;
+    }
+    /*-- Main-Menu-Style --*/
+    .mainmenu-area {
+        padding: 15px 0;
+    }
+    .mainmenu-area:before {
+        opacity: 0.9;
+    }
+    .mainmenu-area .navbar-toggle {
+        border: 1px solid #ffffff;
+        border-radius: 1px;
+    }
+    .mainmenu-area .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+        height: 2px;
+        border-radius: 0;
+    }
+    .mainmenu-area #primary_menu {
+        overflow-y: auto;
+        max-height: 80vh;
+    }
+    .mainmenu-area #primary_menu ul.nav.navbar-nav li {
+        display: block;
+    }
+    .mainmenu-area #primary_menu ul.nav.navbar-nav li a {
+        padding: 15px;
+        border: none;
+    }
+    .mainmenu-area #primary_menu ul.nav.navbar-nav li.active a,
+    .mainmenu-area #primary_menu ul.nav.navbar-nav li a:hover {
+        background-color: #ffffff;
+        color: #5e88fc;
+    }
+    /*-- Home-Area --*/
+    .home-area {
+        padding-top: 120px;
+        padding-bottom: 100px;
+        margin-bottom: 0;
+    }
+    .mobile-image {
+        display: none !important;
+    }
+    .feature-area,
+    .video-area,
+    .progress-area {
+        background-image: none;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .instruction-slide {
+        margin-bottom: 60px;
+    }
+    .instruction-slide .item {
+        margin: 85px 25px 90px 30px;
+    }
+    .instruction-slide .owl-controls {
+        position: static;
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-bottom .footer-menu ul,
+    .footer-area {
+        text-align: center;
+    }
+
+    .form-double .box {
+        width: 100%;
+        float: none;
+    }
+}
