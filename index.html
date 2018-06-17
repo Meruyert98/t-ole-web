@@ -1,0 +1,523 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>T'ole</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="landing/Group 8447.png">
+    <link rel="shortcut icon" type="image/png" href="landing/Group 8447.png" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".mainmenu-area">
+<!-- MainMenu-Area -->
+<nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="primary_menu">
+            <ul class="nav navbar-nav mainmenu navbar-right">
+                <li class="active"><a href="#home_page">Главная</a></li>
+                <li><a href="#about_page">О приложении</a></li>
+                <li><a href="#feature_page">Преимущества</a></li>
+                <li><a href="#instruction_page">Инструкция</a></li>
+                <li><a href="#contact_page">Контакты</a></li>
+            </ul>
+            <div class="right-button hidden-xs">
+                <a href="#" data-toggle="modal" data-target="#exampleModal">Войти</a>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel" style="text-align:center;">
+                                <img style="width:200px;" src="landing/Group 8447.png">
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form style="margin-top:-50px;">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите номер или эл. почту">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+                                </div>
+                                <p style="text-align:right;">
+                                    <a href="#" style="text-decoration:underline;" data-toggle="modal" data-target="#exampleModal2">
+                                        Забыли пароль
+                                    </a>
+                                </p>
+                                <a href="#">
+                                    <button type="submit" class="btn btn-primary" style="background-color:#4EBAC7;border:none;height:50px;margin:10px 0px; text-align:center; width:100%;">
+                                        Войти
+                                    </button>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">
+                                <img src="landing/Group 8447.png">
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Введите номер">
+                                </div>
+                                <p style="text-align:right;">
+                                    <a href="#" style="text-decoration:underline;" data-toggle="modal" data-target="#exampleModal2">
+                                        Переотправить
+                                    </a>
+                                </p>
+                                    <button style="background-color:#4EBAC7;border:none;height:50px;margin:10px 0px; text-align:center; width:100%;" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+                                        Далее
+                                    </button>
+                                <br/>
+                                <small>На указанный номер телефона будет отправлено сообщение с кодом подтверждения</small>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel4">
+                                <img src="landing/Group 8447.png">
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp" placeholder="Введите номер или эл. почту">
+                                    <input type="email" class="form-control" id="exampleInputEmail5" aria-describedby="emailHelp" placeholder="Код подтверждения">
+                                </div>
+                                <p style="text-align:right;">
+                                    <a href="#" style="text-decoration:underline;" data-toggle="modal" data-target="#exampleModal4">
+                                        Переотправить
+                                    </a>
+                                </p>
+                                <a href="#">
+                                    <button style="background-color:#4EBAC7;border:none;height:50px;margin:10px 0px; text-align:center; width:100%;" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">Далее</button>
+                                </a>
+                                <br/>
+                                <small>На указанный номер телефона будет отправлено сообщение с кодом подтверждения</small>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel3">
+                                <img src="landing/Group 8447.png">
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail13" aria-describedby="emailHelp" placeholder="Введите номер или эл. почту">
+                                    <input type="password" class="form-control" id="exampleInputPassword3" aria-describedby="emailHelp" placeholder="Введите новый пароль">
+                                    <input type="password" class="form-control" id="exampleInputPassword3new" placeholder="Повторите новый пароль">
+                                </div>
+                                <p style="text-align:right;">
+                                    <a href="#" style="text-decoration:underline;" data-toggle="modal" data-target="#exampleModal3">
+                                        Переотправить
+                                    </a>
+                                </p>
+                                <button style="background-color:#4EBAC7;border:none;height:50px;margin:10px 0px; text-align:center; width:100%;" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Далее</button>
+                                <br/>
+                                <small>На указанный номер телефона будет отправлено сообщение с кодом подтверждения</small>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- MainMenu-Area-End -->
+<!-- Home-Area -->
+<header class="home-area overlay" id="home_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="space-80 hidden-xs"></div>
+                <h1><!--class="wow fadeInUp" data-wow-delay="0.4s"-->
+                    Сканируй легко и быстро, забудь про дорогое оборудование и без трудностей сдавай отчеты налоговой службе
+                </h1>
+                <div class="space-20"></div>
+                <div class="desc"><!--class="desc wow fadeInUp" data-wow-delay="0.6s"-->
+                    <p>Мобильное приложение для учета товаров</p>
+                </div>
+                <div class="space-20"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Home-Area-End -->
+<!-- About-Area -->
+<section class="section-padding-top" id="about_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <div class="page-title section-padding">
+                    <h5 class="title">О приложении</h5>
+                    <div class="space-10"></div>
+                    <p>“To’le” полезен в продаже товаров -  приложение создано для малого и среднего бизнеса. Заменяет ККМ и выполняет такие основные функции как: сканирование шрих-кода, подсчет оплаты и товаров на складе, уведомление об окончание продуктов, отправка данных государству.</p>
+                    <div class="space-20"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <figure class="mobile-image">
+                    <img src="landing/phone.png" style="height:400px; width:300px;" alt="">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cols">
+        <div class="row">
+            <div class="col-xs-6 col-md-3 padd">
+                <img src="landing/Rectangle_New_1.png" alt="aim">
+                <div class="bottom-left">
+                    <h4>
+                        <b>Освободите место</b>
+                    </h4>
+                    <p>Кассовый аппарат теперь на телефоне</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 padd">
+                <img src="landing/gg.png" alt="">
+            </div>
+            <div class="col-xs-6 col-md-3 padd">
+                <img src="landing/Rectangle_New_2.png" alt="aim">
+                <div class="bottom-left">
+                    <h4>
+                        <b>Считайте легко</b>
+                    </h4>
+                    <p>Проведи телефоном по товару и следи за статистикой без записей</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 padd">
+                <img src="landing/Bitmap.png" alt="aim">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-3 padd">
+                <img src="landing/Bitmap Copy 2.png" alt="aim">
+            </div>
+            <div class="col-xs-6 col-md-3 padd">
+                <img src="landing/Rectangle_New_1.png" alt="aim">
+                <div class="bottom-left">
+                    <h4>
+                        <b>Экономьте время</b>
+                    </h4>
+                    <p>Приложение позволит вам сократить время на отчетности и подписи.</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 padd">
+                <img src="landing/supermarket-and-mobile-background-with-qr-code_23-2147592365.png" alt="">
+            </div>
+            <div class="col-xs-6 col-md-3 padd">
+                <img src="landing/Rectangle_New_2.png" alt="aim">
+                <div class="bottom-left">
+                    <h4>
+                        <b>Считайте легко</b>
+                    </h4>
+                    <p>Проведи телефоном по товару и следи за статистикой без записей</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid some">
+        <div class="row">
+            <div class="col-md-7 col-xs-6"></div>
+            <div class="col-md-5 col-xs-6">
+                <p>Скачивайте приложение на свое устройство</p>
+                <img id="one" src="landing/Appstore.png">
+                <img id="two" src="landing/Playstore.png">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About-Area-End -->
+<!-- Feature-Progress-Area -->
+<section class="progress-area" id="feature_page">
+    <div class="container">
+        <div class="row">
+            <div class="page-title section-padding">
+                <div class="col-xs-12 col-md-6" style="padding-left: 70px;">
+                    <h5 class="title">Преимущества</h5>
+                    <figure class="mobile-image">
+                        <img src="landing/5ugol'nik/5ugol.png" alt="" style="width:200px; height:200; position: absolute; z-index: 1; top: 60px; left: 90px;">
+                        <img src="landing/5ugol'nik/5ugol_2.png" alt="" style="width:200px; height:200; position: absolute; z-index: 2; top:  50px; left: 50px;">
+                        <img src="landing/5ugol'nik/5ugol_3.png" alt="" style="width:200px; height:200; position: absolute; z-index: 3; top:  50px; left: 60px;">
+                    </figure>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6" style="padding-right: 70px; text-align:center;">
+                <div class="space-50"></div>
+                <div class="space-50"></div>
+                <div class="space-50"></div>
+                <p>Не нужно покупать<b>дорогое оборудование и каждый раз тратить деньги</b> на лицензию 1с системы</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="background-color:#DDE5E7;">
+            <div class="col-xs-12 col-md-6">
+                <div class="page-title section-padding" style="padding-left: 70px; text-align:center;">
+                    <div class="space-50"></div>
+                    <div class="space-50"></div>
+                    <p>С помощью нашего приложения вы сможете <b>отсканировать штрих-код товара и посчитать</b> сумму оплаты</p>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-xs"></div>
+            <div class="col-xs-12 col-md-4"><!-- style="padding-left: 70px;">-->
+                <figure class="mobile-image">
+                    <img src="landing/oval/oval_1.png" alt="" style="width:200px; height:200; position: absolute; z-index: 3; top: 50px; left: 40px;">
+                    <img src="landing/oval/0val_left.png" alt="" style="width:200px; height:200; position: absolute; z-index: 1; top:  60px; left: 0px;">
+                    <img src="landing/oval/oval_right.png" alt="" style="width:200px; height:200; position: absolute; z-index: 1; top:  30px; left: 100px;">
+                    <img src="landing/oval/Mask Copy 2.png" alt="" style="width:200px; height:200; position: absolute; z-index: 2; top:  40px; left: 60px;">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6"><!-- style="padding-left: 70px;">-->
+                <figure class="mobile-image">
+                    <img src="landing/romb/romb.png" alt="" style="width:200px; height:200; position: absolute; z-index: 3; top: 50px; left: 50px;">
+                    <img src="landing/romb/romb_3.png" alt="" style="width:200px; height:200; position: absolute; z-index: 1; top:  50px; left: 90px;">
+                    <img src="landing/romb/romb_2.png" alt="" style="width:200px; height:200; position: absolute; z-index: 2; top:  50px; left: 60px;">
+                </figure>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="page-title section-padding" style="padding-right: 60px; text-align:center;">
+                    <div class="space-50"></div>
+                    <div class="space-50"></div>
+                    <p>Возможности <b>передачи</b> необходимых <b>данных налоговым службам</b> соответствуя нынешним <b>требованиям к ККМ</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="background-color:#F4E9E7">
+            <div class="col-xs-12 col-md-6">
+                <div class="page-title section-padding" style="padding-left: 70px; text-align:center; text-size: 50px">
+                    <div class="space-50"></div>
+                    <div class="space-50"></div>
+                    <p>Вы сможете <b>контролировать</b> компанию/сеть <b>с любого устройства и следить за статистикой продаж</b></p>
+                </div>
+            </div>
+            <div class="hidden-xs col-md-3"></div>
+            <div class="col-xs-12 col-md-3"> <!--style="padding-left: 70px;">-->
+                <figure class="mobile-image">
+                    <img src="landing/triangle/triangle.png" alt="" style="width:200px; height:200; position: absolute; z-index: 3; top: 50px; right: 120px;">
+                    <img src="landing/triangle/triangle2.png" alt="" style="width:200px; height:300; position: absolute; z-index: 1; top:  50px; right: 80px;">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="space-100"></div>
+    <div class="container end">
+        <div class="row">
+            <div class="col-xs-6 col-md-6">
+                <img id="first" src="landing/checks.png">
+                <img id="second" src="landing/phone_2.png">
+            </div>
+            <div class="col-md-6 col-xs-6">
+                <div class="space-100"></div>
+                <div class="space-60"></div>
+                <p>Вы сможете <b>контролировать</b> компанию/сеть <b>с любого устройства и следить за статистикой продаж</b></p>
+            </div>
+        </div>
+        <div class="space-100"></div>
+        <div class="space-100"></div>
+        <div class="space-100"></div>
+        <div class="space-100"></div>
+    </div>
+</section>
+<!-- Feature-Progress-Area-End -->
+<!-- instruction-Area -->
+<section class="instruction-area section-padding" id="instruction_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-4 col-md-6">
+                <div class="page-title" style="padding-left: 70px;">
+                    <h5 class="title wow fadeInUp" data-wow-delay="0.2s">Инструкция</h5>
+                    <div class="space-10"></div>
+                </div>
+                <img src="landing/phone.png" style="height: 450px; width: 350px;">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="space-100"></div>
+                <div class="space-100"></div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="text-align: center;height: 30px; width: 450px;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="carousel-content">
+                                <p style="color:#666666;">Добавляете свой товар в приложение и формируете склад</p>
+                            </div>
+                            <img src="landing/white.png" alt="Los Angeles" style="width:100%; auto;">
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content">
+                                <p style="color:#666666;">Добавляете свой товар в приложение и формируете склад</p>
+                            </div>
+                            <img src="landing/white.png" alt="Chicago" style="width:100%; height:auto;">
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content">
+                                <p style="color:#666666;">Добавляете свой товар в приложение и формируете склад</p>
+                            </div>
+                            <img src="landing/white.png" alt="New york" style="width:100%; height:auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space-30"></div>
+    </div>
+</section>
+<!-- instruction-Area-End -->
+<!-- Footer-Area -->
+<footer class="footer-area new-area" id="contact_page">
+    <div class="section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="space-10"></div>
+                    <div class="page-title">
+                        <h5 class="title" style="color:white;">Написать нам</h5>
+                        <div class="space-10"></div>
+                    </div>
+                    <div class="form-style-8">
+                        <form>
+                            <input type="email" name="field2" placeholder="Ваш gmail или номер" />
+                            <textarea placeholder="Сообщение" onkeyup="adjust_textarea(this)"></textarea>
+                            <input type="button" value="Отправить" />
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="space-10"></div>
+                    <div class="page-title">
+                        <h5 class="title" style="color:white;">Контакты</h5>
+                        <div class="space-10"></div>
+                    </div>
+                    <div class="addres">
+                        <h4>АДРЕС</h4>
+                        <p>г.Алматы, ул.Жибек жолы 135\10 о</p>
+                        <h4>ТЕЛЕФОНЫ</h4>
+                        <p>+77751777117 +77011761761</p>
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-Bootom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <img style="height:25px; width:25px;" src="landing/logo/facebook-logo-button.png">
+                    <img style="height:25px; width:25px;" src="landing/logo/twitter-logo-button.png">
+                    <img style="height:25px; width:25px;" src="landing/logo/instagram-logo.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <span>&copy;<script>document.write(new Date().getFullYear()-1)</script>-<script>document.write(new Date().getFullYear());</script> tole.kz</span>
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <img class="logo" src="landing/logo/Group 7417.png" alt="logo">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="footer-menu">
+                        <p style="margin-top:-30px;">Скачивайте приложение на свое устройство</p>
+                        <img style="padding-right: 50px; width:200px; height:50px;" src="landing/Appstore.png">
+                        <img style="width:150px; height:50px;" src="landing/Playstore.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-Bootom-End -->
+</footer>
+<!-- Footer-Area-End -->
+<!--Carousel-->
+<script type="text/javascript">
+    //auto expand textarea
+    function adjust_textarea(h) {
+        h.style.height = "20px";
+        h.style.height = (h.scrollHeight)+"px";
+    }
+</script>
+<!--Carousel End-->
+<!--Vendor-JS-->
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/vendor/jquery-ui.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<!--Plugin-JS-->
+<script src="js/contact-form.js"></script>
+<script src="js/ajaxchimp.js"></script>
+<script src="js/scrollUp.min.js"></script>
+<script src="js/wow.min.js"></script>
+<!--Main-active-JS-->
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        if($(window).width() <= 480) {
+            window.location = "t'ole - mobile/index.html";
+        }
+    });
+</script>
+</body>
+</html>
